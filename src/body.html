@@ -1,0 +1,39 @@
+<div id="loading">Drawing the map of Europe…</div>
+<div id="app">
+  <header id="topbar">
+    <div class="natname"><span class="flag" id="tbflag"></span><span id="tbname">—</span></div>
+    <div class="date" id="tbdate"></div>
+    <div id="stats"></div>
+    <button class="tbtn" id="btnSave" title="Save game">Save</button>
+    <button class="tbtn" id="btnMenu" title="Main menu">Menu</button>
+  </header>
+  <div id="main">
+    <div id="mapwrap">
+      <canvas id="map"></canvas>
+      <div id="mapmodes">
+        <button data-mode="political" class="on">Political</button>
+        <button data-mode="alliance">Alliances</button>
+        <button data-mode="supply">Supply</button>
+        <button data-mode="industry">Industry</button>
+      </div>
+      <div id="zoomctl"><button id="zin">+</button><button id="zout">−</button></div>
+      <div id="tooltip"></div>
+      <div id="hint"></div>
+      <button id="endturn">End Turn<small id="etdate"></small></button>
+    </div>
+    <aside id="side">
+      <div id="tabs">
+        <button data-tab="prov">Province</button>
+        <button data-tab="army">Army</button>
+        <button data-tab="nation">Nation</button>
+        <button data-tab="dip">Diplomacy</button>
+        <button data-tab="res">Research</button>
+        <button data-tab="trade">Trade</button>
+        <button data-tab="ledger">Ledger</button>
+      </div>
+      <div id="panel"></div>
+    </aside>
+  </div>
+</div>
+<div id="modal"></div>
+<div id="start" style="display:none"></div>
